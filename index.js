@@ -3,7 +3,7 @@ var app = express()
 var deployRoute = require('./deploy')(app)
 
 app.get('/', function (req, res) {
-    res.send('Hello World')
+    res.send('Deploy succeed')
 })
 
 
