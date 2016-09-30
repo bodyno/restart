@@ -12,9 +12,13 @@ module.exports = function (app) {
         })
     })
 
-    app.post('/deploy/blog', function (req, res) {
+    app.all('/deploy/blog', function (req, res) {
         exec('cd /home/bodyno.github.io && git stash && git pull', function(error, stdout, stderr) {
-            res.send(stdout)
+            if (error) {
+                res.send(stdout)
+            } else {
+                res.send(stderr)
+            }
         })
     })
 }
