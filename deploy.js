@@ -17,7 +17,7 @@ module.exports = function (app) {
             if (error) {
                 res.send(error)
             } else {
-                res.send(stderr)
+                res.send(stdout)
             }
         })
     })
