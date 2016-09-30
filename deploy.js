@@ -15,7 +15,7 @@ module.exports = function (app) {
     app.all('/deploy/blog', function (req, res) {
         exec('cd /home/bodyno.github.io && git stash && git pull', function(error, stdout, stderr) {
             if (error) {
-                res.send(error)
+                res.send(error + stderr)
             } else {
                 res.send(stdout)
             }
