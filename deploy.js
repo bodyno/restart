@@ -3,7 +3,7 @@ var exec = require('child_process').exec
 module.exports = function (app) {
 
     app.get('/deploy', function (req, res) {
-        res.send('It works fine.')
+        res.send('It works very fine.')
     })
 
     app.post('/deploy', function (req, res) {
