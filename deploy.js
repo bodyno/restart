@@ -32,8 +32,4 @@ module.exports = function (app) {
     })
   })
 
-  app.all('/acme-challenge/dqUNz7pM9j-czgYPFDkIRknGC_T8jWorSZ3VU5_jpgQ', function (req, res) {
-    res.send('dqUNz7pM9j-czgYPFDkIRknGC_T8jWorSZ3VU5_jpgQ.MZc7L871efsOB8pvMxbWfaVc6jMtdWoyUQ4NVdoa6P0')
-  })
-
 }
